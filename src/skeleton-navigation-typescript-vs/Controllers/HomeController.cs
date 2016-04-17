@@ -23,7 +23,6 @@ namespace skeleton_navigation_typescript_vs.Controllers
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
-
             return View();
         }
 
