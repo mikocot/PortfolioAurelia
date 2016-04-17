@@ -22,6 +22,7 @@
 /// <reference path="../src/blur-image.js" />
 /// <reference path="../src/child-router.js" />
 /// <reference path="../src/gallery.js" />
+/// <reference path="../src/gallery-image.js" />
 /// <reference path="../src/main.js" />
 /// <reference path="../src/users.js" />
 /// <reference path="../src/welcome.js" />

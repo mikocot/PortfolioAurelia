@@ -1,10 +1,12 @@
 <template>
+    <require from="gallery-image.html"></require>
+    
     <section>
         <h2>${heading}</h2>
+        <button click.delegate="reverseUsers()">Reverse</button>
         <div class="row au-stagger">
             <div class="col-sm-6 col-md-3 card-container au-animate" repeat.for="user of users">
-                <img src.bind="user.avatar_url" crossorigin ref="image" />
-
+                <gallery-image imghref.bind="user.avatar_url"></gallery-image>
             </div>
         </div>
     </section>

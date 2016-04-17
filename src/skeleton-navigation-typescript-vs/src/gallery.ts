@@ -15,6 +15,10 @@ export class Users {
     });
   }
 
+    reverseUsers() {
+        this.users.reverse();
+    }
+
   activate() {
     return this.http.fetch('users')
       .then(response => response.json())
