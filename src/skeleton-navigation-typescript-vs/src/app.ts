@@ -12,4 +12,12 @@ export class App {
 
         this.router = router;
     }
+
+    activate() {
+        var windowHeight = $(window).height();
+        var menuHeight = 100;
+
+        $('#intro').height(windowHeight - menuHeight);
+        console.log('ab');
+    }
 }
