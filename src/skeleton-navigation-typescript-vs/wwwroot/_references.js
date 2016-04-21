@@ -35,11 +35,8 @@
 /// <reference path="../wallaby.js" />
 /// <reference path="config.js" />
 /// <reference path="dist/app.js" />
-/// <reference path="dist/child-router.js" />
-/// <reference path="dist/gallery - Copy.js" />
 /// <reference path="dist/gallery.js" />
 /// <reference path="dist/main.js" />
-/// <reference path="dist/users.js" />
 /// <reference path="dist/welcome.js" />
 /// <reference path="jspm_packages/github/components/jquery@2.2.1.js" />
 /// <reference path="jspm_packages/github/components/jquery@2.2.1/jquery.js" />

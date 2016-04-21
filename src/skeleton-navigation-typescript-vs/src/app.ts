@@ -1,4 +1,6 @@
 import {Router, RouterConfiguration} from 'aurelia-router'
+import Aureliatemplating = require("aurelia-templating");
+import View = Aureliatemplating.View;
 
 export class App {
     router: Router;
@@ -13,11 +15,29 @@ export class App {
         this.router = router;
     }
 
-    activate() {
-        var windowHeight = $(window).height();
-        var menuHeight = 100;
+    attached() {
+        var windowHeight = (<any>$(window)).height();
+        var menuHeight = 95;
 
-        $('#intro').height(windowHeight - menuHeight);
-        console.log('ab');
+        (<any>$('#intro')).height(windowHeight - menuHeight);
+        (<any>$('main')).height(windowHeight - menuHeight);
+
+        (<any>$('#intro')).on('mousewheel', function () {
+            (<any>$('html, body')).animate({
+                scrollTop: (<any>$('#menu')).offset().top
+            }, 500);
+            return false;
+        });
+
+        (<any>$('#submenu')).on('mousewheel', function () {
+            (<any>$('html, body')).animate({
+                scrollTop: (<any>$('#intro')).offset().top
+            }, 500);
+            return false;
+        });
+    }
+
+    activate() {
+       
     }
 }

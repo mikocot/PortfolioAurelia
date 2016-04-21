@@ -19,9 +19,30 @@ export class Users {
         this.users.reverse();
     }
 
-  activate() {
-    return this.http.fetch('users')
-      .then(response => response.json())
-      .then(users => this.users = users);
-  }
+    activate() {
+        
+        //$(function () {
+
+        //    var isotopeContainer = $('.gallery-grid');
+        //    var grid = isotopeContainer.isotope({
+        //        // options...
+        //        resizable: false,
+        //        itemSelector: '.grid-item',
+        //        layoutMode: 'packery',
+        //        packery: {
+        //            gutter: 1,
+        //            columnWidth: '.grid-item'
+        //        },
+        //        percentPosition: true
+        //    });
+
+        //    grid.imagesLoaded().progress(function () {
+        //        grid.isotope('layout');
+        //    });
+        //});
+
+        return this.http.fetch('users')
+            .then(response => response.json())
+            .then(users => this.users = users);
+    }
 }
